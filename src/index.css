@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html { background: #f6f5f4; color: #000; -webkit-font-smoothing: antialiased; }
+  body { font-family: "Hanken Grotesk", system-ui, sans-serif; }
+  :focus-visible { outline: 2px solid #0075de; outline-offset: 2px; border-radius: 6px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; }
+}
